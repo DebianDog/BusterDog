@@ -1,9 +1,9 @@
 # BusterDog + build system      
 BusterDog, based on the Debian 'Buster' branch but **without systemd**.  
 It's using special method (taken from **AntiX**) to avoid systemd by replacing systemd with 'elogind'.  
-(and more, e.g replacing libsystemd with libelogind)      
+(and more, e.g. libsystemd replaced by libelogind)      
 [Forum thread]()     
-See [Here](https://debiandog.github.io/MakeLive/Readme-build-busterdog.html) for a Busterdog build system.     
+See [Here](https://debiandog.github.io/MakeLive/Readme-build-busterdog.html) for a **Busterdog build system**.     
 
 ### 32 and 64 bit ISO's:        
 (see specifications below)             
