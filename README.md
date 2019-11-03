@@ -10,7 +10,7 @@ Iso 32 bit: [BusterDog-openbox_jwm-2019-11-03_32-bit.iso](https://github.com/Deb
 Iso 64 bit: [BusterDog-openbox_jwm-2019-11-03_64-bit.iso](https://github.com/DebianDog/BusterDog/releases/download/v0.1/BusterDog-openbox_jwm-2019-11-03_64-bit.iso) **Size: 320MB** 
 [Md5sum](https://github.com/DebianDog/BusterDog/releases/download/v0.1/BusterDog-openbox_jwm-2019-11-03_64-bit.md5)         
 
-DEVX and Firmware squashfs modules: [Here](https://github.com/DebianDog/DevuanDog/releases/tag/v0.2)         
+DEVX and Firmware squashfs modules: [Here](https://github.com/DebianDog/BusterDog/releases/tag/v0.2)         
 
 Built from scratch by using debootstrap and remastered afterwards.     
 
