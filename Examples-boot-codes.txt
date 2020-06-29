@@ -1,4 +1,4 @@
-Update 2020-06-18, added the +EXIT parameter for porteus-boot, see info and example below.
+Update 2020-06-291818, added the +EXIT parameter for porteus-boot, see info and example below.
 
 BusterDog is very small Debian Live CD
 It is not based on Debian but pure Debian Live linux.
