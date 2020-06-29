@@ -1,3 +1,4 @@
+Update 2020-06-18, added the +EXIT parameter for porteus-boot, see info and example below.
 
 BusterDog is very small Debian Live CD
 It is not based on Debian but pure Debian Live linux.
@@ -21,7 +22,7 @@ Boot code examples (grub(4dos) after extracting /live folder from the iso on top
 
 1. BusterDog 'boot style Porteus' (recommended if you are familiar with puppy or porteus boot options)
 
-BusterDog Live CD using porteus boot method (very similar to Puppy linux boot and save options).
+Buster Live CD using porteus boot method (very similar to Puppy linux boot and save options).
 The initrd1.xz file is edited from Fred for use only with BusterDog.
 It is not the exact Porteus boot method since it uses .squashfs modules extention instead .xzm
 and /live instead /porteus folder, but the save file options are the same as in Porteus.
@@ -65,20 +66,21 @@ root (hd0,0)
 kernel (hd0,0)/live/vmlinuz1 noauto from=/ changes=EXIT:/live/
 initrd (hd0,0)/live/initrd1.xz
 
-Recommended: Use unique name (parent folder of "live"):
-e.g. create folder "Buster" and place the "live" folder inside it, then:
+When using +EXIT the temporarily changes will NOT run in memory, which can be an advantage, specially when you have small amount of RAM.
+(with the "normal" EXIT: configuration, the amount of space in / is limited to 60% (default) of the amount of RAM you have).
+A folder "tmp-changes" in "live" wiil be created and will be written to the save storage on demand (e.g. by running save2flash or choosing Save at shutdown), example for savefolder:
 
 Code:
-title Buster-PorteusDog (sda1, from directory Buster) 
+title Buster-PorteusDog (sda1) 
 root (hd0,0)
-kernel (hd0,0)/Buster/live/vmlinuz1 noauto from=/Buster changes=EXIT:/Buster/live/
-initrd (hd0,0)/Buster/live/initrd1.xz
+kernel (hd0,0)/live/vmlinuz1 noauto from=/ changes=+EXIT:/live/
+initrd (hd0,0)/live/initrd1.xz
 
 Porteus-boot code does not need anything special added for encrypted save file.
 
 2. BusterDog live-boot-3x
 
-BusterDog Live CD using live-boot version 3.x. Buster (Wheezy, Jessie, SID) boot method.
+Buster Live CD using live-boot version 3.x. Debian (Wheezy, Jessie, SID) boot method.
 To save changes you need to create save file persistence or ext partition with label persistence
 + adding persistence.conf file inside.
 Read more about live-boot-3x code options here:
@@ -89,7 +91,7 @@ You need to have persistence in kernel boot line otherwise no save file will be 
 Code:
 title BusterDog live-boot-3x (sda1)
 root=(hd0,0) 
-kernel /live/vmlinuz1 boot=live config persistence swapon quickreboot noeject showmounts
+kernel /live/vmlinuz1 boot=live config persistence swapon quickreboot noeject showmounts union=aufs
 initrd /live/initrd.img 
 boot
 
@@ -98,7 +100,7 @@ Encrypted save file boot code example:
 Code:
 title BusterDog live-boot-3x  (sda1)- encrypted save file inside /live
 root=(hd0,0) 
-kernel /live/vmlinuz1 boot=live config swapon quickreboot noeject showmounts persistence persistence-path=/live/ persistence-encryption=none,luks 
+kernel /live/vmlinuz1 boot=live config swapon quickreboot noeject showmounts persistence persistence-path=/live/ persistence-encryption=none,luks union=aufs 
 initrd /live/initrd.img 
 boot
 
