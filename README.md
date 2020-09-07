@@ -1,5 +1,5 @@
 # BusterDog + build system  
-**Update 2020-09-07, 64-bit ISO now with UEFI support** Many thanks to @jamesbond from the Puppy Linux forum.
+**Update 2020-09-07, 64-bit ISO now with UEFI support** Many thanks to @jamesbond from the [Puppy Linux forum](https://forum.puppylinux.com/index.php)  
 
 BusterDog, based on the Debian 'Buster' branch but **without systemd**.  
 It's using special method (taken from **AntiX**) to avoid systemd by replacing systemd with 'elogind'.  
@@ -11,7 +11,7 @@ See [Here](https://debiandog.github.io/MakeLive/Readme-build-busterdog.html) for
 (see specifications below)             
 Iso 32 bit: [BusterDog-openbox_jwm-2020-06-29_32-bit.iso](https://github.com/DebianDog/BusterDog/releases/download/v0.1/BusterDog-openbox_jwm-2020-06-29_32-bit.iso) **Size: 302MB** 
 [Md5sum](https://github.com/DebianDog/BusterDog/releases/download/v0.1/BusterDog-openbox_jwm-2020-06-29_32-bit.md5)  
-**Update 2020-09-07, 64-bit now with UEFI support**  
+**Update 2020-09-07, 64-bit ISO now with UEFI support**  
 Iso 64 bit: [BusterDog-openbox_jwm-2020-09-07_64-bit-UEFI.iso](https://github.com/DebianDog/BusterDog/releases/download/v0.1/BusterDog-openbox_jwm-2020-09-07_64-bit-UEFI.iso) **Size: 345MB** 
 [Md5sum](https://github.com/DebianDog/BusterDog/releases/download/v0.1/BusterDog-openbox_jwm-2020-09-07_64-bit-UEFI.md5)         
 
