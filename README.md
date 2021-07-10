@@ -7,7 +7,7 @@ It's using special method (taken from **AntiX**) to avoid systemd by replacing s
 [Forum thread](http://murga-linux.com/puppy/viewtopic.php?t=117255)     
 See [Here](https://debiandog.github.io/MakeLive/Readme-build-busterdog.html) for a **Busterdog build system**.     
 
-### 32 and 64 bit ISO's: Updated 2020-09-07 (see [Changes and Fixes](https://puppylinux.rockedge.org/viewtopic.php?p=206#p206) )         
+### 32 and 64 bit ISO's: Updated 2020-09-07 (see [Changes and Fixes](https://forum.puppylinux.com/viewtopic.php?p=206#p206) )         
 (see specifications below)             
 Iso 32 bit: [BusterDog-openbox_jwm-2020-06-29_32-bit.iso](https://github.com/DebianDog/BusterDog/releases/download/v0.1/BusterDog-openbox_jwm-2020-06-29_32-bit.iso) **Size: 302MB** 
 [Md5sum](https://github.com/DebianDog/BusterDog/releases/download/v0.1/BusterDog-openbox_jwm-2020-06-29_32-bit.md5)  
